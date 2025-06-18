@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: raw
+    database: shipping-management-461107
+    schema: raw
+    description: "Raw data ingested from source systems."
+    tables:
+      - name: vendors
+      - name: employees
+      - name: vehicles
+      - name: customers
+      - name: service_area
+      - name: warehouse
+      - name: service_area_zip_codes
+      - name: customer_service_tickets 
+      - name: packages
+      - name: route_stops
+      - name: delivery_routes
+
+      - name: maintenance_records
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: date_performed
+
+      - name: fuel_purchases
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: purchase_date
+
+      - name: shipments
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: pickup_date
+
+      - name: insurance_claims
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: claim_date
+
+
+
+      - name: invoices
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: issue_date
+
+      - name: inventory
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 30, period: hour}
+        loaded_at_field: date_received

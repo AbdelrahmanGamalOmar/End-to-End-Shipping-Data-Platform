@@ -1,0 +1,21 @@
+version 2:
+
+exposures:
+  - name: customer_insights_dashboard
+    label: Customer Insights Dashboard
+    type: dashboard
+    maturity: low
+    description: This dashboard provides insights into customer behavior, including their purchases, claims, and interactions with the company.
+
+    depends_on:
+      - ref('c_date')
+      - ref('c_customers')
+      - ref('c_employees')
+      - ref('c_payment_methods')
+      - ref('c_packages')
+      - ref('c_warehouses')
+      - ref('f_fct_insurance_claims')
+      - ref('f_fct_shipments')
+
+    owner:
+      name: Abdelrahman Gamal

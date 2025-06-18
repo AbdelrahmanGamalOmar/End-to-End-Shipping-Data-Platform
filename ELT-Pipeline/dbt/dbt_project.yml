@@ -1,0 +1,48 @@
+name: 'shipping_management'
+version: '1.0.0'
+config-version: 2
+
+profile: 'shipping_management'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Configuring models
+models:
+  shipping_management:
+    stg:
+      +schema: stg
+      +materialized: view
+
+    snapshots:
+      +schema: snapshots
+      
+    core:
+      dim:
+        +schema: core 
+        +materialized: table
+      fct:
+        +schema: core 
+        +materialized: incremental
+    
+    finance_mart:
+      +schema: finance_mart
+      +materialized: table
+    
+    logistics_mart:
+      +schema: logistics_mart
+      +materialized: table
+    
+    customer_insights_mart:
+      +schema: customer_insights_mart
+      +materialized: table
+    
+    

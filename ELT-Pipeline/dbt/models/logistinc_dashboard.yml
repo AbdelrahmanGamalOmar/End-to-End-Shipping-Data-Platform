@@ -1,0 +1,18 @@
+version 2:
+
+exposures:
+  - name: logistic_dashboard
+    label: Logistics Dashboard
+    type: dashboard
+    maturity: low
+    description: "This dashboard provides insights into the logistics operations of the company, including shipments, packages, and warehouse management."
+    
+    depends_on:
+      - ref('l_date')
+      - ref('l_employee')
+      - ref('l_packages')
+      - ref('l_warehouses')
+      - ref('l_fct_shipments')
+
+    owner:
+      name: Abdelrahman Gamal

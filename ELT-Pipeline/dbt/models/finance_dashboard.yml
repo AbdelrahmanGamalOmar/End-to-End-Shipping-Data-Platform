@@ -1,0 +1,18 @@
+version: 2 
+ 
+exposures: 
+  - name: finance_dashboard 
+    label: Finance Dashboard
+    type: dashboard 
+    maturity: low 
+    description: "This dashboard provides insights into the financial performance of the company, including insurance claims and shipments data."
+ 
+    depends_on: 
+      - ref('f_date') 
+      - ref('f_employees')
+      - ref('f_payment_methods')
+      - ref('f_fct_insurance_claims')
+      - ref('f_fct_shipments') 
+ 
+    owner: 
+      name: Abdelrahman Gamal 
