@@ -10,17 +10,20 @@ This project demonstrates the design, development, and implementation of a compl
 
 * **Database Design & Implementation:**
     * Designed a normalized operational database schema (18 tables) to represent core shipping company entities and relationships accurately.
-    * Implemented the database in MySQL using SQL DDL statements.
+    * Implemented the database in MySQL using SQL DDL statements.  
+      
 * **Mock Data Generation & Ingestion:**
     * Generated realistic mock transactional data using Python's `Faker` library.
-    * Loaded mock data into the MySQL operational database using `Pandas` and `SQLAlchemy`.
+    * Loaded mock data into the MySQL operational database using `Pandas` and `SQLAlchemy`.  
+      
 * **Automated ELT Pipeline with Airflow & dbt:**
     * Developed and orchestrated automated Extract and Load (EL) pipelines using **Apache Airflow** to efficiently transfer raw data from MySQL to a staging layer within a **Google BigQuery** data warehouse.
     * Implemented sophisticated data transformations (T) using **dbt (data build tool)**, establishing a structured data flow:
         * **Staging Layer:** Direct representation of source data.
         * **Core Layer:** Built a dimensional model (3 fact tables, 8 dimension tables, including a `dim_date` table) optimized for analytical queries.
         * **Slowly Changing Dimensions (SCD Type 2):** Handled historical changes for key dimensions to preserve historical accuracy.
-        * **Data Marts:** Created three subject-oriented data marts (Customer Insights, Logistics, Finance) for targeted departmental reporting.
+        * **Data Marts:** Created three subject-oriented data marts (Customer Insights, Logistics, Finance) for targeted departmental reporting.  
+          
 * **Business Intelligence & Reporting:**
     * Developed three interactive **Power BI** dashboards, each connected to its respective data mart in BigQuery.
     * Visualized key performance indicators (KPIs) and critical insights to empower data-driven decision-making for customer service, logistics operations, and financial management teams.
