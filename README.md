@@ -4,6 +4,8 @@
 
 This project demonstrates the design, development, and implementation of a complete end-to-end data platform for a hypothetical shipping company. It covers the entire data lifecycle, from transactional data capture and mock data generation to robust data warehousing, automated ELT pipelines, and insightful business intelligence dashboards. The goal was to build a scalable and efficient data infrastructure capable of supporting advanced analytics and reporting for key business functions.
 
+---
+
 ## Key Features & Components
 
 * **Database Design & Implementation:**
@@ -23,6 +25,8 @@ This project demonstrates the design, development, and implementation of a compl
     * Developed three interactive **Power BI** dashboards, each connected to its respective data mart in BigQuery.
     * Visualized key performance indicators (KPIs) and critical insights to empower data-driven decision-making for customer service, logistics operations, and financial management teams.
 
+---
+
 ## Technologies Used
 
 * **Databases:** MySQL, Google BigQuery
@@ -31,6 +35,8 @@ This project demonstrates the design, development, and implementation of a compl
 * **Programming Languages:** Python (Pandas, SQLAlchemy, Faker)
 * **Business Intelligence:** Power BI
 
+---
+
 ## Project Structure
 
 This repository is organized into the following main sections:
@@ -38,7 +44,6 @@ This repository is organized into the following main sections:
 ---
 
 ### Datawarehouse
-- `ERD/`
   - `shipping_data_warehouse_core_layer_ERD.png` — Core layer ERD (denormalized)
   - `logistics_mart_ERD.png` — Logistics Mart ERD
   - `finance_mart_ERD.png` — Finance Mart ERD
