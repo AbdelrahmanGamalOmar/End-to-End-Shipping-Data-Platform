@@ -33,20 +33,38 @@ This project demonstrates the design, development, and implementation of a compl
 
 ## Project Structure
 
-This repository is organized into the following main directories:  
-.  
-├── Datawarehouse/   
-│   └── Shipping_Data_Warehouse_Core_Layer ERD         # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).  
-│   └── Logistics_Mart ERD                             # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart.  
-│   └── Finance_Mart ERD                               # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.  
-│   └── Customer_Insights_Mart ERD                     # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Customer Insights mart  
-├── Database/  
-│   └── Shipping_DB_ERD                    # Contains the Entity-Relationship Diagrams (ERDs) for the OLTP Database schema (normalized).  
-│   └── Shipping_DDL                       # Contains SQL Data Definition Language (DDL) statements for creating the MySQL database tables.  
-├── ELT Pipeline/  
-│   └── Airflow/                           # Contains Apache Airflow DAGs for Extract and Load operations.  
-│   └── dbt/                               # Contains dbt project files, including models for staging, core, and data mart layers, and SCD logic.  
-└── PowerBI/    **Note:** This section is currently under Development  
-└── Customer_Insights_Dashboard.pbix      # Placeholder for Power BI dashboard for Customer Insights.  (in development)  
-└── Logistics_Dashboard.pbix              # Placeholder for Power BI dashboard for Logistics operations.  (in development)  
-└── Finance_Dashboard.pbix                # Placeholder for Power BI dashboard for Financial performance.  (in development)  
+This repository is organized into the following main sections:
+
+---
+
+### Datawarehouse
+- `ERD/`
+  - `shipping_data_warehouse_core_layer_ERD.png` — Core layer ERD (denormalized)
+  - `logistics_mart_ERD.png` — Logistics Mart ERD
+  - `finance_mart_ERD.png` — Finance Mart ERD
+  - `customer_insights_mart_ERD.png` — Customer Insights Mart ERD
+
+---
+
+### Database
+  - `Shipping_DB_ERD.png` — ERD for the OLTP schema (normalized)
+  - `shipping_DDL.sql` — MySQL table creation scripts
+
+---
+
+### ELT Pipeline
+- `Airflow/` — DAGs for Extract & Load operations
+- `dbt/` — dbt models for staging, core, and data marts + SCD logic
+
+---
+
+### Power BI Dashboards *(In development)*
+- `Customer_Insights_Dashboard.pbix`
+- `Logistics_Dashboard.pbix`
+- `Finance_Dashboard.pbix`
+
+---
+
+### Mock Data Generator
+- `mock_data_generator.ipynb` Creating and loading mock data into MySQL
+
