@@ -35,9 +35,9 @@ This project demonstrates the design, development, and implementation of a compl
 
 This repository is organized into the following main directories:
 .
-├── Datawarehouse/
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart. 
+├── Datawarehouse/ \n
+│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized). \n
+│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart. \n
 │   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.
 │   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Customer Insights mart
 ├── Database/
