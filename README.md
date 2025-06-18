@@ -35,9 +35,9 @@ This project demonstrates the design, development, and implementation of a compl
 
 This repository is organized into the following main directories:
 .
-├── Datawarehouse/ \n
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized). \n
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart. \n
+├── Datawarehouse/ 
+│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).
+│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart. 
 │   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.
 │   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Customer Insights mart
 ├── Database/
@@ -50,3 +50,5 @@ This repository is organized into the following main directories:
 └── Customer_Insights_Dashboard.pbix  # Placeholder for Power BI dashboard for Customer Insights. (Not yet implemented)
 └── Logistics_Dashboard.pbix          # Placeholder for Power BI dashboard for Logistics operations. (Not yet implemented)
 └── Finance_Dashboard.pbix            # # Placeholder for Power BI dashboard for Financial performance. (Not yet implemented)
+
+<pre> This repository is organized into the following main directories: ``` . ├── Datawarehouse/ │ └── ERD/ │ ├── core_ERD.png # ERD for the Data Warehouse Core layer (denormalized). │ ├── logistics_mart_ERD.png # ERD for the Logistics mart. │ ├── finance_mart_ERD.png # ERD for the Finance mart. │ └── customer_insights_ERD.png # ERD for the Customer Insights mart. ├── Database/ │ ├── ERD/ │ │ └── OLTP_ERD.png # ERD for the OLTP schema (normalized). │ └── DDL/ │ └── create_tables.sql # DDL statements for MySQL tables. ├── ELT_Pipeline/ │ ├── Airflow/ # Apache Airflow DAGs for Extract & Load. │ └── dbt/ # dbt project files for transformations and SCD logic. └── PowerBI/ ├── Customer_Insights_Dashboard.pbix # Customer Insights Dashboard (in development). ├── Logistics_Dashboard.pbix # Logistics Dashboard (in development). └── Finance_Dashboard.pbix # Finance Dashboard (in development). ``` </pre>
