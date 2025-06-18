@@ -33,9 +33,9 @@ This project demonstrates the design, development, and implementation of a compl
 
 ## Project Structure
 
-This repository is organized into the following main directories:
-.
-├── Datawarehouse/ 
+This repository is organized into the following main directories:  
+.  
+├── Datawarehouse/   
 │   └── Shipping_Data_Warehouse_Core_Layer ERD         # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).  
 │   └── Logistics_Mart ERD                             # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart.  
 │   └── Finance_Mart ERD                               # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.  
