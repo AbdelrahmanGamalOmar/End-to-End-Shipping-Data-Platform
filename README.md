@@ -36,19 +36,17 @@ This project demonstrates the design, development, and implementation of a compl
 This repository is organized into the following main directories:
 .
 ├── Datawarehouse/ 
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart. 
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Customer Insights mart
-├── Database/
-│   └── ERD/                  # Contains the Entity-Relationship Diagrams (ERDs) for the OLTP Database schema (normalized).
-│   └── DDL/                  # Contains SQL Data Definition Language (DDL) statements for creating the MySQL database tables.
-├── ELT Pipeline/
-│   └── Airflow/              # Contains Apache Airflow DAGs for Extract and Load operations.
-│   └── dbt/                  # Contains dbt project files, including models for staging, core, and data mart layers, and SCD logic.
-└── PowerBI/                          **Note:** This section is currently under Development
-└── Customer_Insights_Dashboard.pbix  # Placeholder for Power BI dashboard for Customer Insights. (Not yet implemented)
-└── Logistics_Dashboard.pbix          # Placeholder for Power BI dashboard for Logistics operations. (Not yet implemented)
-└── Finance_Dashboard.pbix            # # Placeholder for Power BI dashboard for Financial performance. (Not yet implemented)
-
-<pre> This repository is organized into the following main directories: ```. ├── Datawarehouse/ │ └── ERD/ │ ├── core_ERD.png # ERD for the Data Warehouse Core layer (denormalized). │ ├── logistics_mart_ERD.png # ERD for the Logistics mart. │ ├── finance_mart_ERD.png # ERD for the Finance mart. │ └── customer_insights_ERD.png # ERD for the Customer Insights mart. ├── Database/ │ ├── ERD/ │ │ └── OLTP_ERD.png # ERD for the OLTP schema (normalized). │ └── DDL/ │ └── create_tables.sql # DDL statements for MySQL tables. ├── ELT_Pipeline/ │ ├── Airflow/ # Apache Airflow DAGs for Extract & Load. │ └── dbt/ # dbt project files for transformations and SCD logic. └── PowerBI/ ├── Customer_Insights_Dashboard.pbix # Customer Insights Dashboard (in development). ├── Logistics_Dashboard.pbix # Logistics Dashboard (in development). └── Finance_Dashboard.pbix # Finance Dashboard (in development).``` </pre>
+│   └── Shipping_Data_Warehouse_Core_Layer ERD         # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Core layer (denormalized).  
+│   └── Logistics_Mart ERD                             # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Logistics mart.  
+│   └── Finance_Mart ERD                               # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Finance mart.  
+│   └── Customer_Insights_Mart ERD                     # Contains the Entity-Relationship Diagrams (ERDs) for the Data Warehouse Customer Insights mart  
+├── Database/  
+│   └── Shipping_DB_ERD                    # Contains the Entity-Relationship Diagrams (ERDs) for the OLTP Database schema (normalized).  
+│   └── Shipping_DDL                       # Contains SQL Data Definition Language (DDL) statements for creating the MySQL database tables.  
+├── ELT Pipeline/  
+│   └── Airflow/                           # Contains Apache Airflow DAGs for Extract and Load operations.  
+│   └── dbt/                               # Contains dbt project files, including models for staging, core, and data mart layers, and SCD logic.  
+└── PowerBI/    **Note:** This section is currently under Development  
+└── Customer_Insights_Dashboard.pbix      # Placeholder for Power BI dashboard for Customer Insights.  (in development)  
+└── Logistics_Dashboard.pbix              # Placeholder for Power BI dashboard for Logistics operations.  (in development)  
+└── Finance_Dashboard.pbix                # Placeholder for Power BI dashboard for Financial performance.  (in development)  
