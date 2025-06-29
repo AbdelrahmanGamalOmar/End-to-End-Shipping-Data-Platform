@@ -1,5 +1,7 @@
 {{ 
-    config(name='finance_dim_payment_methods') 
+    config(
+        name='finance_dim_payment_methods'
+    ) 
 }}
 
 WITH payments AS 

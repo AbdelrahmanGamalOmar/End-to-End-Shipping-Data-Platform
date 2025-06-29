@@ -10,7 +10,7 @@
 SELECT
     shipment_id,
     date_id,
-    employee_id, 
+    dispatcher_id AS employee_id, 
     package_id, 
     warehouse_id, 
     insurance_claim_id, 

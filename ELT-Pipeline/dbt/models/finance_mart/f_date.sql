@@ -1,5 +1,7 @@
 {{ 
-    config(name='finance_dim_date') 
+    config(
+        name='finance_dim_date'
+    ) 
 }}
 
 SELECT  *

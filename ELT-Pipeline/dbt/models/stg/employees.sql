@@ -9,7 +9,7 @@ SELECT
     department,
     manager_id,
     monthly_salary,
-    employee_address,
+    address AS employee_address,
     emergency_contact,
     driver_license_number
 FROM    

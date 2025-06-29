@@ -18,6 +18,7 @@ WITH normalized_payment_method AS
         warehouse_id,
         tax_amount,
         discount_amount,
+        late_fee_amount,
         amount_paid,
         CASE 
             WHEN payment_method = 'credit_card' THEN 1
@@ -26,7 +27,6 @@ WITH normalized_payment_method AS
             WHEN payment_method = 'cash' THEN 4
             ELSE NULL
         END AS payment_method_id
-        late_fee_amount
     FROM 
         {{ ref('fct_shipments') }}
 )

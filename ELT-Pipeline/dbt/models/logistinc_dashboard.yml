@@ -4,6 +4,7 @@ exposures:
   - name: logistic_dashboard
     label: Logistics Dashboard
     type: dashboard
+    tags: ["disabled"]
     maturity: low
     description: "This dashboard provides insights into the logistics operations of the company, including shipments, packages, and warehouse management."
     

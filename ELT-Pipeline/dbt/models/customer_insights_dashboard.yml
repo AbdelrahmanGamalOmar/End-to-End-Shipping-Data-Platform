@@ -5,6 +5,7 @@ exposures:
     label: Customer Insights Dashboard
     type: dashboard
     maturity: low
+    tags: ["disabled"]
     description: This dashboard provides insights into customer behavior, including their purchases, claims, and interactions with the company.
 
     depends_on:

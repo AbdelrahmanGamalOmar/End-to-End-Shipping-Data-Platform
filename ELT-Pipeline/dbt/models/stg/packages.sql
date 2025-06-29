@@ -1,7 +1,7 @@
 SELECT  
     package_id,
     shipment_id,
-    package_description,
+    description AS package_description,
     weight AS package_weight,
     height AS package_height,
     width AS package_width,

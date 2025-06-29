@@ -1,5 +1,7 @@
 {{ 
-    config(name='customer_insights_dim_packages') 
+    config(
+        name='customer_insights_dim_packages'
+    ) 
 }}
 
 SELECT  

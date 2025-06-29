@@ -1,5 +1,7 @@
 {{ 
-    config(name='customer_insights_dim_warehouses') 
+    config(
+        name='customer_insights_dim_warehouses'
+    ) 
 }}
 
 SELECT  
@@ -11,4 +13,4 @@ SELECT
     end_time,
     manager_id
 FROM    
-    {{ ref('dim_warehouses') }}
+    {{ ref('dim_warehouse') }}

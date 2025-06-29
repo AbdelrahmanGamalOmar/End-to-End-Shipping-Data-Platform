@@ -1,5 +1,7 @@
 {{ 
-    config(name='customer_insights_dim_customers') 
+    config(
+        name='customer_insights_dim_customers'
+    ) 
 }}
 
 SELECT  *

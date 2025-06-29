@@ -5,6 +5,7 @@ exposures:
     label: Finance Dashboard
     type: dashboard 
     maturity: low 
+    tags: ["disabled"]
     description: "This dashboard provides insights into the financial performance of the company, including insurance claims and shipments data."
  
     depends_on: 

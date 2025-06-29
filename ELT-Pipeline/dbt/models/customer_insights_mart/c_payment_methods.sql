@@ -1,5 +1,7 @@
 {{ 
-    config(name='customer_insights_dim_payment_methods') 
+    config(
+        name='customer_insights_dim_payment_methods'
+    ) 
 }}
 
 WITH payments AS 

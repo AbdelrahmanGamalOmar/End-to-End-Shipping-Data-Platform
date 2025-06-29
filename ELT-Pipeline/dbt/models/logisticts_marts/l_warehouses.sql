@@ -1,5 +1,7 @@
 {{ 
-    config(name='logistics_dim_warehouses') 
+    config(
+        name='logistics_dim_warehouses'
+    ) 
 }}
 
 SELECT  
@@ -10,4 +12,4 @@ SELECT
     square_footage,
     temperature_controlled
 FROM    
-    {{ ref('dim_warehouses') }}
+    {{ ref('dim_warehouse') }}

@@ -1,5 +1,7 @@
 {{
-    config(name="finance_dim_employees")
+    config(
+        name="finance_dim_employees"
+    )
 }}
 
 SELECT  

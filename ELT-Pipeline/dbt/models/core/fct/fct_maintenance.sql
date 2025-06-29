@@ -14,7 +14,7 @@ SELECT
     m.maintenance_description,
     m.maintenance_cost,
     m.part_used,
-    m.technician_notes
+    m.technician_note
 FROM
     {{ ref('maintenance_records') }} m 
 LEFT JOIN 

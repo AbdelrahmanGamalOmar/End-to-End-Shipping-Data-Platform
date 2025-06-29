@@ -5,8 +5,8 @@ SELECT
     location_code,
     date_received,
     date_shipped,
-    inventory_status,
-    handled_by_employee_id,
+    current_status AS inventory_status,
+    handled_by AS handled_by_employee_id,
     temperature_log
 FROM    
     {{ source('raw', 'inventory') }}

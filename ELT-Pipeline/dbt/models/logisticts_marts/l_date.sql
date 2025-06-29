@@ -1,5 +1,7 @@
 {{ 
-    config(name='logistics_dim_date') 
+    config(
+        name='logistics_dim_date'
+) 
 }}
 
 SELECT  *

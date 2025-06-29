@@ -1,5 +1,7 @@
 {{ 
-    config(name='logistics_dim_employee') 
+    config(
+        name='logistics_dim_employee'
+    ) 
 }}
 
 SELECT  

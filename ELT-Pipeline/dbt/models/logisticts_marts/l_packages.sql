@@ -1,5 +1,7 @@
 {{ 
-    config(name='logistics_dim_packages') 
+    config(
+        name='logistics_dim_packages'
+    ) 
 }}
 
 SELECT  

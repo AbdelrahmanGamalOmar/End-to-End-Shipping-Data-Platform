@@ -35,7 +35,7 @@ SELECT
     date_id,
     invoice_id,
     insurance_claim_id,
-    dispatcher_id AS employee_id,
+    employee_id,
     CAST(payment_method_id AS INT64) AS payment_method_id,
     tax_amount,
     discount_amount,

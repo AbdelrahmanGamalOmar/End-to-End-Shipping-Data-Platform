@@ -11,7 +11,7 @@ SELECT
     d.date_id,
     f.vehicle_id,
     f.vendor_id,
-    f.drive_id,
+    f.driver_id,
     f.gallons_purchased AS gallons,
     f.price_per_gallon,
     f.odometer_reading,
@@ -20,7 +20,7 @@ FROM
 LEFT JOIN 
     {{ ref('dim_date') }} d 
 ON 
-    f.purchase_date = d.date
+    DATETIME(f.purchase_date) = d.date
 
 {% if is_incremental() %}
   WHERE f.purchase_id > (SELECT MAX(purchase_id) from {{ this }})

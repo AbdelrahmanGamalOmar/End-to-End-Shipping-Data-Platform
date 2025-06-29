@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: raw
-    database: shipping-management-461107
+    database: shipping-management-464121
     schema: raw
     description: "Raw data ingested from source systems."
     tables:
@@ -10,8 +10,8 @@ sources:
       - name: employees
       - name: vehicles
       - name: customers
-      - name: service_area
-      - name: warehouse
+      - name: service_areas
+      - name: warehouses
       - name: service_area_zip_codes
       - name: customer_service_tickets 
       - name: packages

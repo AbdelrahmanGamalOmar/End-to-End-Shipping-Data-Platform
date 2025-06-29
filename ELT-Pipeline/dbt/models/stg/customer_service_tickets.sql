@@ -5,10 +5,10 @@ SELECT
     employee_id,
     ticket_date,
     issue_type,
-    issue_description,
-    issue_resolution,
-    ticket_status,
-    ticket_priority,
+    description AS issue_description,
+    resolution AS issue_resolution,
+    status AS ticket_status,
+    priority AS ticket_priority,
     resolution_time_minutes,
     customer_satisfaction_rating
 FROM    
