@@ -4,7 +4,7 @@
 
 This project demonstrates the design, development, and implementation of a complete end-to-end data platform for a hypothetical shipping company. It covers the entire data lifecycle, from transactional data capture and mock data generation to robust data warehousing, automated ELT pipelines, and insightful business intelligence dashboards. The goal was to build a scalable and efficient data infrastructure capable of supporting advanced analytics and reporting for key business functions.
 
-<img src="ELT Pipeline.png" alt="ELT Pipeline" height="600" width="900"/>
+<img src="ELT Pipeline.png" alt="ELT Pipeline" height="300" width="900"/>
 
 ---
 
