@@ -68,7 +68,7 @@ This repository is organized into the following main sections:
 
 ---
 
-### Power BI Dashboards *(In development)*
+### Power BI Dashboards 
 - `Customer_Insights_Dashboard.pbix`
 - `Logistics_Dashboard.pbix`
 - `Finance_Dashboard.pbix`
