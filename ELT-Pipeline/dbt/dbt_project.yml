@@ -16,6 +16,7 @@ clean-targets:
   - "dbt_modules"
 
 # Configuring models
+
 models:
   shipping_management:
     stg:
@@ -44,5 +45,3 @@ models:
     customer_insights_mart:
       +schema: customer_insights_mart
       +materialized: table
-    
-    
