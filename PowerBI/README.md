@@ -1,7 +1,7 @@
-# Customer Insights Dashboard - Finance Dashboards – Logistics Dashboard -- Power BI
+# Business Intelligence Dashboards – Power BI
 
 ## Overview
-This project contains two Power BI dashboards designed to analyze and visualize **customer behavior** and **financial performance** based on shipment, claims, and customer service data.
+This project contains two Power BI dashboards designed to analyze and visualize **customer behavior** **financial, and logistics performance** based on shipment, claims, and customer service data.
 
 ---
 
